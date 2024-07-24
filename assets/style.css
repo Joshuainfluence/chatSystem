@@ -273,8 +273,8 @@ a .content {
 }
 
 /* we will use this class name in php to show offline status */
-.users-list a .status-dot .offline {
-    color: #ccc;
+.users-list a .status-dot.offline {
+    color: #ff0000;
 }
 
 /* chat area css code */
@@ -350,7 +350,7 @@ a .content {
 }
 
 .incoming .details p {
-    background: #ff0000;
+    background: #fff;
     color: #333;
     border-radius: 18px 18px 0 18px;
 }

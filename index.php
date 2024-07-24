@@ -1,13 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chat app</title>
-    <link rel="stylesheet" href="assets/style.css">
-    <link rel="stylesheet" href="assets/font_awesome/css/font-awesome.css">
-</head>
+<?php
+session_start();
+if (isset($_SESSION['unique_id'])) {
+    header("location: users.php");
+} 
+include_once "header.php";
+?>
 
 <body>
     <div class="wrapper">
@@ -15,7 +12,7 @@
             <header>
                 Realtime Chat App
             </header>
-            <form action="#" enctype="multipart/form-data">
+            <form action="#" enctype="multipart/form-data" autocomplete="off">
                 <div class="error-txt"></div>
                 <div class="name-details">
                     <div class="field input">
@@ -46,7 +43,7 @@
                     <input type="submit" name="" value="Continue to chat" id="">
                 </div>
             </form>
-            <div class="link">Already signed up? <a href="login.html">Login now</a></div>
+            <div class="link">Already signed up? <a href="login.php">Login now</a></div>
         </section>
     </div>
     <script src="js/pass-show-hide.js"></script>
