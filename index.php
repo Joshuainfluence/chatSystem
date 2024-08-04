@@ -10,7 +10,7 @@ include_once "header.php";
     <div class="wrapper">
         <section class="form signup">
             <header>
-                Realtime Chat App
+                Influence Chat App
             </header>
             <form action="#" enctype="multipart/form-data" autocomplete="off">
                 <div class="error-txt"></div>

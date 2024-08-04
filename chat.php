@@ -25,7 +25,21 @@ include_once "header.php";
                 <img src="php/images/<?php echo $row['img'] ?>" alt="">
                 <div class="details">
                     <span><?php echo ucfirst($row['fname']) . " " . ucfirst($row['lname']) ?></span>
-                    <p><?php echo $row['status'] ?></p>
+                    <p><?php // echo $row['status'] ?></p>
+                    <?php
+                        if ($row['status'] == "Active now") {
+                        ?>
+
+                            <p style="color: white; background-color: green; display:flex; justify-content:center; opacity: 0.5;"><?php echo $row['status'] ?></p>
+                        <?php
+                        } else {
+                        ?>
+                            <p style="color: white; background-color: red; display:flex; justify-content:center; opacity: 0.5;"><?php echo $row['status'] ?></p>
+
+                        <?php
+                        }
+
+                        ?>
                 </div>
 
             </header>

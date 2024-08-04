@@ -16,6 +16,9 @@
         (strlen($result) > 20) ? $msg = substr($result, 0, 20)  . "...": $msg = $result; 
         // adding you: text berfore msg if login id send msg
         ($outgoing_id == $row2['outgoing_msg_id']) ? $you = "You: " : $you = null;
+        // if ($outgoing_id == $row2['outgoing_msg_id']) {
+        //     $you = "You: ";
+        // }
        
         //check if user is online or offline
         ($row['status'] == "Offline now") ? $offline = "offline" : $offline = "";

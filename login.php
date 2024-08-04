@@ -6,7 +6,7 @@ include_once "header.php";
     <div class="wrapper">
         <section class="form login">
             <header>
-                Realtime Chat App
+                Influence Chat App
             </header>
             <form action="#" autocomplete="off">
                 <div class="error-txt"></div>
